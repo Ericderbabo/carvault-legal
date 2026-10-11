@@ -36,7 +36,7 @@
 <ul><li>deine E-Mail-Adresse</li><li>dein Passwort, ausschließlich als Hash und niemals im Klartext</li><li>welche Anmeldewege mit deinem Konto verknüpft sind (Passwort, Google, Apple)</li><li>technische Anmeldedaten, etwa wann dein Konto angelegt wurde und wann du dich zuletzt</li></ul>
 <p>  angemeldet hast</p>
 <p>Dein Passwort gibst du nur in der App ein; sie schickt es direkt an Firebase Authentication.<br>Unsere eigenen Server erhalten und speichern kein Passwort. Bei der Anmeldung verbindet sich die<br>App unmittelbar mit Firebase, dabei wird technisch bedingt deine IP-Adresse an Google<br>übertragen. Meldest du dich über Google oder Apple an, übermittelt dein Anbieter die zur<br>Kontoerstellung nötigen Daten (i. d. R. E-Mail-Adresse, Name) an Firebase Authentication, keine<br>weiteren Berechtigungen. Unsere Server übernehmen davon nur eine Kennung deines Kontos und deine<br>E-Mail-Adresse.</p>
-<p>Links zum Zurücksetzen deines Passworts oder zum Ändern deiner E-Mail-Adresse erzeugt Firebase<br>Authentication; verschickt werden sie von uns. Löschst du dein Konto, löschen wir auch deinen<br>Eintrag bei Firebase Authentication. Eine Verarbeitung durch Google LLC in den USA ist dabei<br>möglich (siehe Abschnitt 13).</p>
+<p>Die E-Mails zum Zurücksetzen deines Passworts und zum Bestätigen einer neuen E-Mail-Adresse erzeugt und<br>verschickt Firebase Authentication in unserem Auftrag; dabei wird wie bei der Anmeldung technisch bedingt deine<br>IP-Adresse an Google übertragen. Unsere Server zählen solche Anfragen nur, um Missbrauch zu begrenzen, und<br>vermerken sie im Sicherheitsprotokoll (Abschnitt 14); eigene E-Mails verschicken wir dafür nicht. Löschst du dein Konto, löschen wir auch deinen<br>Eintrag bei Firebase Authentication. Eine Verarbeitung durch Google LLC in den USA ist dabei<br>möglich (siehe Abschnitt 13).</p>
 <h2>4. Sichtungen: Fotos und Standort</h2>
 <p>Beim Fotografieren eines Fahrzeugs wird das Foto auf unseren Servern gespeichert und deinem Konto<br>zugeordnet. Vor dem Hochladen entfernen wir automatisch enthaltene EXIF-Metadaten (u. a.<br>Geräteinformationen, in den Bilddaten selbst eingebettete GPS-Koordinaten), damit diese<br>Informationen nicht zusätzlich zum separat erfassten Standort im Bild selbst weiterverbreitet<br>werden.</p>
 <p>Ein Foto aus dem öffentlichen Raum zeigt fast immer mehr als nur ein Auto — vor allem<br>amtliche Kennzeichen, gelegentlich auch Personen im Bild. Über ein Kennzeichen lässt sich der<br>Halter eines Fahrzeugs bestimmen; es ist damit ein personenbezogenes Datum, auch wenn wir selbst<br>diese Zuordnung weder vornehmen können noch dürfen.</p>
@@ -82,7 +82,7 @@
 <ul><li>MapTiler AG (Schweiz): Kartenkacheln der Kartenansicht, siehe Abschnitt 7; Sitz: Schweiz</li></ul>
 <p>  (Angemessenheitsbeschluss der EU-Kommission)</p>
 <ul><li>Google Ireland Limited (Firebase Authentication, Firebase Cloud Messaging): Anmeldung und Verwaltung</li></ul>
-<p>  der Zugangsdaten jedes Kontos (Abschnitt 3) und Zustellung von Push-Mitteilungen (Abschnitt 20); Sitz: Irland (EU), bei einer Verarbeitung durch Google LLC (USA) auf<br>  Grundlage des EU-US Data Privacy Framework bzw. von EU-Standardvertragsklauseln</p>
+<p>  der Zugangsdaten jedes Kontos samt Versand der E-Mails zum Zurücksetzen des Passworts und zum Ändern der<br>  E-Mail-Adresse (Abschnitt 3) und Zustellung von Push-Mitteilungen (Abschnitt 20); Sitz: Irland (EU), bei einer Verarbeitung durch Google LLC (USA) auf<br>  Grundlage des EU-US Data Privacy Framework bzw. von EU-Standardvertragsklauseln</p>
 <ul><li>Apple Distribution International Ltd. (Irland) bzw. Apple Inc. (USA), Google Commerce Limited (Irland; Verkäufer</li></ul>
 <p>  bei Google Play) sowie Google Ireland Ltd. bzw. Google LLC (USA) — Anmeldung mit deinem Apple- bzw. Google-Konto, Zahlungsabwicklung,<br>  App-Vertrieb; welche Gesellschaft dein Vertragspartner ist, richtet sich nach dem Land deines<br>  Store-Kontos; für Zahlungsabwicklung, Vertrieb und die Anmeldung mit deinem Konto sind Apple und<br>  Google eigenständig Verantwortliche und keine Auftragsverarbeiter von uns, es gelten ihre eigenen<br>  Datenschutzhinweise</p>
 <ul><li>Google LLC (ML Kit): Software-Paket für die Kennzeichen-Suche auf deinem Gerät, siehe Abschnitt 4; die</li></ul>
@@ -97,8 +97,8 @@
 <p>  verschwinden daraus spätestens dann</p>
 <ul><li>Ergebnisse von Autoquartett-Partien bleiben ohne Bezug zu deinem Konto für die Statistik deiner</li></ul>
 <p>  Mitspieler erhalten</p>
-<ul><li>Feedback-Texte löschen wir nach 365 Tagen</li><li>Das Sicherheitsprotokoll (sicherheitsrelevante Ereignisse, etwa Anfragen zum Zurücksetzen des Passworts;</li></ul>
-<p>  dabei kann eine E-Mail-Adresse als Kennung vorkommen) löschen wir nach 90 Tagen</p>
+<ul><li>Feedback-Texte löschen wir nach 365 Tagen</li><li>Das Sicherheitsprotokoll (sicherheitsrelevante Ereignisse, etwa Anfragen zum Zurücksetzen des Passworts</li></ul>
+<p>  oder zum Ändern der E-Mail-Adresse;<br>  dabei kann eine E-Mail-Adresse als Kennung vorkommen) löschen wir nach 90 Tagen</p>
 <ul><li>Das Vorschau-Foto der Fahrzeugerkennung (Abschnitt 6) bleibt höchstens 30 Minuten auf dem Server, auch wenn</li></ul>
 <p>  du abbrichst</p>
 <ul><li>Server-Protokolle (Abschnitt 29) und die Tage deiner App-Öffnungen für die Wochen-Serie (Abschnitt 27)</li></ul>
@@ -217,4 +217,4 @@
 <p>  richtigen und vollständigen Fahrzeugkatalog (Art. 6 Abs. 1 lit. f DSGVO)</p>
 <ul><li>Speicherdauer: bis zur Bearbeitung; erledigte Meldungen löschen wir 180 Tage nach der Erledigung, alle Meldungen</li></ul>
 <p>  spätestens mit der Löschung deines Kontos; deine Meldungen sind im Datenexport enthalten</p>
-<p class="meta">Stand: 10.10.2026 (Version 32)</p></body></html>
+<p class="meta">Stand: 11.10.2026 (Version 33)</p></body></html>
